@@ -1,1 +1,1 @@
-# lightkurve-exoplanet-ml-project
+# Lightkurve Exoplanet ML Project

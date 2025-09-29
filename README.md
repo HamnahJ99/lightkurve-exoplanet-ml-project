@@ -13,7 +13,7 @@ This is an ongoing project, where I am building a pipeline to analyse Kepler spa
 * Apply flattening and folding to remove long-term variability
 * Period folding using Box Least Squares Periodogram
 * Savitzky-Golay filtering for smoothing
-### 2. Feature Extraction - *work in progress*
+### 2. Feature Extraction 
 * **Transit Depth**: Decrease of relative flux in transit
     * Calculated as (baseline_flux - transit_min)/baseline_flux
     * Set to 0 for negative examples (no genuine transits)
@@ -22,9 +22,9 @@ This is an ongoing project, where I am building a pipeline to analyse Kepler spa
     * Set to 0 for negative examples (allowing for clear distinction in features of stars with exoplanets vs without exoplanets)
 * **Period**: Time between transits
     * Calculated using Periodogram 
-* ***Next Step***: Compiling extracted features into structured Pandas Dataframe
+* Comply extracted features into structured pandas Dataframe
 ### 3. Machine Learning - *work in progress*
-* Developing classification approach to distinguish between stars with exoplanets vs stars without exoplanet using extracted features.
+* **Next Step**: Developing classification approach to distinguish between stars with exoplanets vs stars without exoplanet using extracted features.
 
 ## KEY RESULTS
 Detailed analysis with plots available in [main analysis notebook](project-code.ipynb) <br>
@@ -35,11 +35,13 @@ Detailed analysis with plots available in [main analysis notebook](project-code.
 |KIC 12069424 | 0 | 0 | 0.36809 |
 |KIC 8832417 | 0 | 0 | 0.49722 |
 
-## TECHNOLOGIES USED - *to be updated*
+## TECHNOLOGIES USED 
 **Python** <br>
 **Lightkurve**: Kepler data analysis <br>
-**NumPy/SciPy**: Signal processing <br>
-**Matplotlib**: Data visualisation 
+**NumPy**: Signal processing <br>
+**SciPy**: Signal processing <br>
+**Matplotlib**: Data visualisation <br>
+**pandas**: Tabular data
 
 ## EVALUATION 
 ### Current Limitations:
@@ -49,6 +51,6 @@ Detailed analysis with plots available in [main analysis notebook](project-code.
 * Selection bias introduced when manually selecting stars and quarters
 ### Expansion Opportunities:
 * Increase sample size and include variety of planet sizes
-* Improve smoothing process, introducing de-noising methods
+* Improve smoothing process, introducing denoising methods
 * Extracting more features with better precision
 
